@@ -1,0 +1,183 @@
+.body-container {
+    background-image: url("../app/assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.sub-div {
+    background-color: rgba(4, 13, 31, 0.77);
+    height: 50%;
+    width: 60%;
+    border: 1px solid;
+    display: inline-block;
+}
+
+.form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aligning-div {
+    height: 97%;
+    width: 97%;
+    display: block;
+}
+
+.inputs-container {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.from-input {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.from-input-div-container {
+    width: 94%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.pic-text-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    background-color: white;
+}
+
+.pic {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95vw;
+}
+
+.input-div {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    direction: rtl;
+    border: none;
+}
+
+.select-div {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.select-div-container {
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+}
+
+.select {
+    border: none;
+    direction: rtl;
+}
+
+.select-text-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 43%;
+    width: 44%;
+    background-color: white;
+}
+
+.select-input-div {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.select-pic {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-txt {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95vw;
+}
+
+.submit-button {
+
+    height: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.button {
+    height: 58%;
+    width: 18%;
+    background-color: rgb(0, 202, 133);
+    border: none;
+    color: white;
+    font-size: 16px;
+}

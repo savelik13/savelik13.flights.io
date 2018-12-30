@@ -1,0 +1,27 @@
+{
+  "name": "angularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savelik13/savelik13.flights.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savelik13/flightsTest/issues"
+  },
+  "homepage": "https://github.com/savelik13/flightsTest#readme",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-animate": "^1.7.5",
+    "angular-aria": "^1.7.5",
+    "angular-material": "^1.1.11",
+    "angular-messages": "^1.7.5",
+    "angular-ui-router": "^1.0.20"
+  }
+}

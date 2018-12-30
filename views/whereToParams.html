@@ -1,0 +1,28 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/whereToParamsStyle.css" rel="stylesheet">
+
+<div class="main-div-whereTo" >
+        <div class="sub-div-whereTo">
+            <form class="form-whereTo" ng-submit="searchValues()">
+                <div class="from-input-whereTo">
+                    <input class="input-whereTo" type="text" value="{{leaving}}" ng-model="leaving" placeholder="From">
+                </div>
+                <div class="to-input-whereTo">
+                    <input class="input-whereTo" type="text" value="{{destination}}" placeholder="To" ng-model="destination">
+                </div>
+                <div class="select-div-whereTo">
+                    <select class="select-whereTo" ng-model="number" value="{{number}}">
+                        <option value="">Select option</option>
+                        <option value="1">1 Passenger</option>
+                        <option value="2">2 Passengers</option>
+                        <option value="3">3 Passangers</option>
+                        <option value="4">4 Passangers</option>
+                    </select>
+                </div>
+                <div class="submit-button-whereTo">
+                    <input class="button-whereTo" type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,89 @@
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+   @media only screen and (max-width: 600px) {
+  .from-input, .to-input {
+    width: 96%;
+    padding: 2%;
+  }
+  .input {
+      width: 100%;
+  }
+  .inputs-container {
+      display: block;
+  }
+  .button {
+      width: 96%;
+      height: 80%;
+      padding: 2%;
+  }
+  .select {
+      width: 100%;
+      padding: 2%;
+  }
+}
+</style>
+<div class="main-div" ng-controller="homeController">
+    <div class="sub-div">
+        <form class="form" ng-submit="searchValues()">
+            <div class="aligning-div">
+                <div class="inputs-container">
+                    <div class="from-input">
+                        <div class="from-input-div-container">
+                            <div class="pic-text-input">
+                                <div class="pic">
+                                    <img src="../app/assets/depart (1).png">
+                                </div>
+                                <div class="txt">
+                                    :המראה
+                                </div>
+                                <div class="input-div">
+                                    <input class="input" type="text" placeHolder="תל אביב" ng-model="vacation.from">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="from-input">
+                        <div class="from-input-div-container">
+                            <div class="pic-text-input">
+                                <div class="pic">
+                                    <img src="../app/assets/arrive (1).png">
+                                </div>
+                                <div class="txt">
+                                    :נחיתה
+                                </div>
+                                <div class="input-div">
+                                    <input class="input" type="text" placeHolder="בודפשט" ng-model="vacation.to">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-div">
+                    <div class="select-div-container">
+                        <div class="select-text-input">
+                            <div class="select-pic">
+                                <img src="../app/assets/depart (1).png">
+                            </div>
+                            <div class="select-txt">
+                                :נוסעים
+                            </div>
+                            <div class="select-input-div">
+                                <select class="select" ng-model="vacation.people">
+                                    <option value="">מספר נוסעים</option>
+                                    <option value="1">1 נוסעים</option>
+                                    <option value="2">2 נוסעים</option>
+                                    <option value="3">3 נוסעים</option>
+                                    <option value="4">4 נוסעים</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <input class="button" type="submit" value="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

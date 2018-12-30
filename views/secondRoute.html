@@ -1,0 +1,208 @@
+<!-- The page for the second route -->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/secondRouteStyles.css" rel="stylesheet" type="text/css">
+
+<div class="main-container">
+    <div class="sub-container">
+        <div class="search-bar-container">
+            <div class="search-bar-sub-container">
+                <div class="search-button-div">
+                    <button class="search-button">חיפוש חדש</button>
+                </div>
+                <div class="small-home-div">
+                    <!-- Including html file that has almost the same code as in the home page -->
+                    <ng-include src="'views/whereToParams.html'"></ng-include>
+                </div>
+                <div class="price-text-div">
+                    <div>טווח מחיר לאדם</div>
+                </div>
+                <div class="prices-div">
+                    <div class="min-price">150$</div>
+                    <div class="max-price">300$</div>
+                </div>
+                <div class="slider-container">
+                    <md-slider class="slider"></md-slider>
+                </div>
+                <div class="separator-div">
+                    <div class="separator"></div>
+                </div>
+                <div class="company-text-div">
+                    <div class="company-text">חברת תעופה</div>
+                </div>
+                <div class="check-box-div">
+                    <div class="check-box">
+                        <div class="flight-price">$400</div>
+                        <div class="comp-name">ARKIA</div>
+                        <div class="box"><md-checkbox></md-checkbox></div>
+                    </div>
+                    <div class="check-box">
+                        <div class="flight-price">$500</div>
+                        <div class="comp-name">EL-AL</div>
+                        <div class="box"><md-checkbox></md-checkbox></div>
+                    </div>
+                    <div class="check-box">
+                        <div class="flight-price">$700</div>
+                        <div class="comp-name">TURKISH AIRLINES</div>
+                        <div class="box"><md-checkbox></md-checkbox></div>
+                    </div>
+                </div>
+                <div class="separator-div">
+                    <div class="separator"></div>
+                </div>
+                <div class="company-text-div">
+                    <div class="company-text">
+                        משך הטיסה כולל עצירות
+                    </div>
+                </div>
+                <div class="flight-duration-div">
+                    <div>טיסה הלוך</div>
+                </div>
+                <div class="duration-div">
+                    <div class="min-price">4:25 שעות</div>
+                    <div class="max-price">4:50 שעות</div>
+                </div>
+                <div class="slider-container">
+                    <md-slider></md-slider>
+                </div>
+                <div class="flight-duration-div">
+                    <div>טיסה חזור</div>
+                </div>
+                <div class="duration-div">
+                    <div class="min-price">3:05 שעות</div>
+                    <div class="max-price">3:30 שעות</div>
+                </div>
+                <div class="slider-container">
+                    <md-slider></md-slider>
+                </div>
+                <div class="separator-div">
+                    <div class="separator"></div>
+                </div>
+                <div class="company-text-div">
+                    <div class="company-text">
+                        שעות הטיסה
+                    </div>
+                </div>
+                <div class="flight-duration-div">
+                    <div>טיסה הלוך</div>
+                </div>
+                <div class="duration-div">
+                    <div class="min-price">4:25 שעות</div>
+                    <div class="max-price">4:50 שעות</div>
+                </div>
+                <div class="slider-container">
+                    <md-slider></md-slider>
+                </div>
+                <div class="flight-duration-div">
+                    <div>טיסה חזור</div>
+                </div>
+                <div class="duration-div">
+                    <div class="min-price">3:05 שעות</div>
+                    <div class="max-price">3:30 שעות</div>
+                </div>
+                <div class="slider-container">
+                    <md-slider></md-slider>
+                </div>
+                <div class="separator-div">
+                    <div class="separator"></div>
+                </div>
+                <div class="company-text-div">
+                    <div class="company-text">שדות תעופה</div>
+                </div>
+                <div class="check-box-div">
+                    <div class="check-box">
+                        <div class="flight-price">$400</div>
+                        <div class="comp-name">BEN GURION</div>
+                        <div class="box"><md-checkbox></md-checkbox></div>
+                    </div>
+                    <div class="check-box">
+                        <div class="flight-price">$500</div>
+                        <div class="comp-name">OVDA</div>
+                        <div class="box"><md-checkbox></md-checkbox></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="result-bar-container">
+            <div class="result-bar-sub-container">
+                <div class="title">
+                    דף הבית / תוצאות חיפוש
+                </div>
+                <div class="best-deals-container">
+                    <div class="best-deals"></div>
+                    <div class="best-deals"></div>
+                    <div class="best-deals"></div>
+                </div>
+                <div class="sort-and-num-results-container">
+                    
+                </div>
+                <div class="search-results">
+                    <ul class="ul">
+                        <li class="li" ng-repeat="flight in flights | filter: {from: leaving} | filter: {to: destination}">
+                            <div class="result-container">
+                                <div class="top-part-result">
+                                    <div class="flight-type">
+                                        טיסה סדירה
+                                    </div>
+                                </div>
+                                <div class="main-part-result">
+                                    <div class="results-left-container">
+                                        <div class="results-price">499$</div>
+                                        <div class="per-person-text">לנוסע</div>
+                                        <div class="total-price">סה"כ 499$</div>
+                                        <div class="order-button-div">
+                                            <button class="order-button">הזמן</button>
+                                        </div> 
+                                    </div>
+                                    <div class="results-right-container">
+                                        <div class="one-way-result">
+                                            <div class="flight-time">
+                                                <div class="flight-company">
+                                                    <div style="font-size: 18px;">ארקיע</div>
+                                                    <div style="font-size: 12px;">IZ</div>
+                                                </div>
+                                                <div class="time">
+                                                    <div style="font-size: 18px;">16:10</div>
+                                                    <div style="font-size: 12px;">TLV</div>
+                                                </div>
+                                            </div>
+                                            <div class="flight-duration">
+                                                <div style="font-size: 18px;">טיסה ישירה</div>
+                                                <div style="font-size: 12px;">משך הטיסה: 04:25</div>
+                                            </div>
+                                            <div class="landing-time">
+                                                <div style="font-size: 18px;">19:45</div>
+                                                <div style="font-size: 12px;">MSW</div>
+                                            </div>
+                                        </div>
+                                        <div class="second-way-result">
+                                            <div class="flight-time">
+                                                <div class="flight-company">
+                                                    <div style="font-size: 18px;">אל על</div>
+                                                    <div style="font-size: 12px;">EL-AL</div>
+                                                </div>
+                                                <div class="time">
+                                                    <div style="font-size: 18px;">10:25</div>
+                                                    <div style="font-size: 12px;">MSW</div>
+                                                </div>
+                                            </div>
+                                            <div class="flight-duration">
+                                                <div style="font-size: 18px;">טיסה ישירה</div>
+                                                <div style="font-size: 12px;">משך הטיסה: 04:25</div>
+                                            </div>
+                                            <div class="landing-time">
+                                                <div style="font-size: 18px;">19:45</div>
+                                                <div style="font-size: 12px;">MSW</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
